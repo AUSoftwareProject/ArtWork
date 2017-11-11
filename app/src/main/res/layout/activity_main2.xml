@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.group1.ybe.artwork.Main2Activity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/name_and_artist"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/art_name"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|center"
+                android:text="@string/name_of_the_art"
+                android:textAlignment="gravity"
+                android:textColor="#222222"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/art_name"
+                android:layout_alignParentEnd="true"
+                android:text="Raphael"
+                android:textColor="#777777"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/brush" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/art_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/raphael_ve_atina_okulu_4" />
+
+    <ScrollView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/art_image">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/description_text"
+            android:textColor="#222222" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/like_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/like_buttons">
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="SHARE" />
+
+        <Button
+            android:id="@+id/library_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:text="ADD LIBRARY" />
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="358dp"-->
+    <!--android:layout_height="347dp"-->
+    <!--tools:layout_editor_absoluteX="13dp"-->
+    <!--tools:layout_editor_absoluteY="16dp">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText2"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:text="Atina Okulu" />-->
+    <!--</FrameLayout>-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioButton"-->
+    <!--android:layout_width="129dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:text="Like"-->
+    <!--tools:layout_editor_absoluteX="64dp"-->
+    <!--tools:layout_editor_absoluteY="388dp" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/radioButton2"-->
+    <!--android:layout_width="129dp"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:text="Unlike"-->
+    <!--tools:layout_editor_absoluteX="193dp"-->
+    <!--tools:layout_editor_absoluteY="388dp" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_width="331dp"-->
+    <!--android:layout_height="135dp"-->
+    <!--android:autoText="false"-->
+    <!--android:ems="10"-->
+    <!--android:gravity="start"-->
+    <!--android:inputType="textLongMessage"-->
+    <!--android:text=" is one of the most famous frescoes by the Italian Renaissance artist Raphael. It was painted between 1509 and 1511 as a part of Raphael's commission to decorate the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican."-->
+    <!--android:textAppearance="@android:style/TextAppearance.DeviceDefault"-->
+    <!--tools:layout_editor_absoluteX="15dp"-->
+    <!--tools:layout_editor_absoluteY="216dp" />-->
+
+    <!--android:id="@+id/text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:gravity="top"-->
+    <!--android:text="Long text bla bla."-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textColorHint="@android:color/black"-->
+    <!--android:textSize="37sp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView4"-->
+    <!--android:layout_width="353dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--app:srcCompat="@drawable/raphael_ve_atina_okulu_4"-->
+    <!--tools:layout_editor_absoluteX="15dp"-->
+    <!--tools:layout_editor_absoluteY="66dp" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/imageView5"-->
+    <!--android:layout_width="149dp"-->
+    <!--android:layout_height="34dp"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--app:srcCompat="@drawable/artist__s_paint_brush_by_rildraw-d4a5ogt"-->
+    <!--tools:layout_editor_absoluteX="219dp"-->
+    <!--tools:layout_editor_absoluteY="16dp" />-->
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/toggleButton"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="34dp"-->
+    <!--android:text="Share"-->
+    <!--tools:layout_editor_absoluteX="64dp"-->
+    <!--tools:layout_editor_absoluteY="459dp" />-->
+
+    <!--<ToggleButton-->
+    <!--android:id="@+id/toggleButton2"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="34dp"-->
+    <!--android:text="Library"-->
+    <!--tools:layout_editor_absoluteX="222dp"-->
+    <!--tools:layout_editor_absoluteY="459dp" />-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="21dp"-->
+    <!--android:layout_height="135dp"-->
+    <!--tools:layout_editor_absoluteX="347dp"-->
+    <!--tools:layout_editor_absoluteY="217dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical" />-->
+    <!--</ScrollView>-->
+
+</android.support.constraint.ConstraintLayout>

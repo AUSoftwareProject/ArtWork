@@ -14,4 +14,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_time_line">TimeLineActivity</string>
+    <string name="name">Name</string>
+    <string name="name_of_the_art">The School of Athens</string>
+    <string name="description_text">The School of Athens (Italian: Scuola di Atene) is one of the most famous frescoes by the Italian Renaissance artist Raphael. It was painted between 1509 and 1511 as a part of Raphael's commission to decorate the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican. The Stanza della Segnatura was the first of the rooms to be decorated, and The School of Athens, representing Philosophy, was probably the second painting to be finished there, after La Disputa (Theology) on the opposite wall, and the Parnassus. The picture has long been seen as "Raphael's masterpiece and the perfect embodiment of the classical spirit of the Renaissance".</string>
 </resources>

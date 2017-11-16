@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkWhite"
+    tools:context="com.group1.ybe.artwork.MainActivity">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/messageRecyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/name_and_artist"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/art_name"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|center"
+                android:text="@string/name_of_the_art"
+                android:textAlignment="gravity"
+                android:textColor="#222222"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/art_name"
+                android:layout_alignParentEnd="true"
+                android:text="Raphael"
+                android:textColor="#777777"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/brush" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/art_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/raphael_ve_atina_okulu_4" />
+
+    <ScrollView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/art_image">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/description_text"
+            android:textColor="#222222" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/like_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/description">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/like_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark"
+                android:contentDescription="@string/like_button" />
+
+            <ImageButton
+                android:id="@+id/unlike_button"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_dark" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/like_buttons">
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="@string/share_button_text" />
+
+        <Button
+            android:id="@+id/library_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:text="@string/add_library_button_text" />
+    </LinearLayout>
+    <!--<Button-->
+    <!--android:id="@+id/sign_out_button"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/sign_out"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:onClick="signOut"/>-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="76dp"
+        android:layout_height="76dp"/>
+</android.support.constraint.ConstraintLayout>

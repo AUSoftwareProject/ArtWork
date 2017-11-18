@@ -36,6 +36,13 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"फ़ोन पर खोलें"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"प्रवेश करें"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google के साथ प्रवेश करें"</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"विविध"</string>
+    <string msgid="368094699078615544" name="s1">"चित्र सहेजें"</string>
+    <string msgid="4550830452390689489" name="s2">"विज्ञापन को चित्र गैलरी में चित्र सहेजने दें?"</string>
+    <string msgid="2435407834265420668" name="s3">"स्वीकार करें"</string>
+    <string msgid="9167523597401839819" name="s4">"अस्वीकार करें"</string>
+    <string msgid="1566682516266724847" name="s5">"कैलेंडर इवेंट बनाएं"</string>
+    <string msgid="5996672174517137271" name="s6">"विज्ञापन को कैलेंडर इवेंट बनाने दें?"</string>
     <string msgid="146198913615257606" name="search_menu_title">"खोज"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

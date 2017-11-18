@@ -1,25 +1,29 @@
 <resources>
-    <string name="app_name">ArtWork</string>
-    <string name="title_activity_login">Sign in</string>
+    <string name="app_name"> ArtWork </string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">Invite</string>
+    <string name="invitation_message">Please join me for a friendly chat</string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Friendly Chat Invite</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="fresh_config">Fresh Config</string>
+    <string name="cause_crash">Cause Crash</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="logo_here">LogoHere</string>
+    <string name="name_of_the_art">Raphael And Athens School</string>
+    <string name="artist_name">Raphael</string>
+    <string name="description_text">Morbi et euismod augue. Etiam ut semper lorem. Donec viverra nisi at ligula bibendum mollis. Morbi blandit justo non nulla luctus sodales. Phasellus euismod quam et nisl malesuada pharetra quis interdum libero. Cras sed lacus a turpis lacinia euismod ac non tellus. Vivamus dui sapien, laoreet non urna nec, tempus porta felis. Pellentesque commodo ipsum sit amet blandit laoreet. Nunc lobortis pellentesque est id efficitur. Sed malesuada mi tortor, ut porta dolor maximus ut. In hac habitasse platea dictumst. Cras sodales sem neque, in commodo dui suscipit sed. Vivamus id lectus a orci consectetur volutpat vitae sit amet erat. Pellentesque volutpat ac lorem ac fringilla. Duis viverra eu neque vel facilisis. Vivamus justo nibh, rutrum et elit posuere, lacinia malesuada mi.Aenean faucibus ligula nisl, ut laoreet nisi vehicula vitae. Vestibulum ac est tristique, fringilla metus non, tempus augue. Nullam in nisl at ligula ultrices venenatis sed a dolor. Ut rhoncus bibendum dolor, et tempus urna volutpat eget. Donec pellentesque mollis nunc, et accumsan arcu ullamcorper at. Aenean risus eros, imperdiet at ligula nec, tincidunt semper augue. Pellentesque at lectus libero. Proin semper eu nulla eu mattis. Maecenas convallis tortor id scelerisque consequat. Etiam non dignissim justo. Etiam orci ex, pulvinar venenatis pharetra ac, scelerisque in quam.</string>
+    <string name="share_button_text">SHARE</string>
+    <string name="add_library_button_text">ADD LIBRARY</string>
+    <string name="like_button">Like Button</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">SIGN IN</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_time_line">TimeLineActivity</string>
-    <string name="name">Name</string>
-    <string name="name_of_the_art">The School of Athens</string>
-    <string name="description_text">The School of Athens (Italian: Scuola di Atene) is one of the most famous frescoes by the Italian Renaissance artist Raphael. It was painted between 1509 and 1511 as a part of Raphael's commission to decorate the rooms now known as the Stanze di Raffaello, in the Apostolic Palace in the Vatican. The Stanza della Segnatura was the first of the rooms to be decorated, and The School of Athens, representing Philosophy, was probably the second painting to be finished there, after La Disputa (Theology) on the opposite wall, and the Parnassus. The picture has long been seen as "Raphael's masterpiece and the perfect embodiment of the classical spirit of the Renaissance".</string>
+    <string name="action_settings">Settings</string>
+    <string name="dislike_button">Dislike Button</string>
 </resources>
